@@ -10,7 +10,7 @@ import jakarta.persistence.GenerationType;
 @Entity
 public class Usuarios {
     @Id // identificador de la entidad
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // generar automatica del id para la PK. Generar valores se delega a la db
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // generar automaticamente el id para la PK. Generar valores se delega a la db
     private int id;
 
     private String nombre;
