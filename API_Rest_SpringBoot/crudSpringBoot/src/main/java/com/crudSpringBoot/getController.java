@@ -17,8 +17,8 @@ public class getController {
     private final UserRepository userRepository;
 
     @Autowired
-    public getController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public getController(UserRepository puserRepository) {
+        this.userRepository = puserRepository;
     }
 
     @GetMapping("/")

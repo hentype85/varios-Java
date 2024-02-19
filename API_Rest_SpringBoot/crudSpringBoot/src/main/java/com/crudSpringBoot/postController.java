@@ -17,8 +17,8 @@ public class postController {
     private final UserRepository userRepository;
 
     @Autowired
-    public postController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public postController(UserRepository puserRepository) {
+        this.userRepository = puserRepository;
     }
 
     @PostMapping("/post/usuarios")
