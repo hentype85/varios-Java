@@ -2,10 +2,14 @@ package com.crudSpringBoot.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
 
 @Entity
 public class Usuarios {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String nombre;
@@ -18,8 +22,7 @@ public class Usuarios {
     }
 
     // constructor
-    public Usuarios (int id, String nombre, String apellido, int edad) {
-        this.id = id;
+    public Usuarios (String nombre, String apellido, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
